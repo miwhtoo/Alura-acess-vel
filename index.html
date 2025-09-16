@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aviões</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="p-5">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="img/Itzikgur-My-Seven-Travel-Airplane.128.png" class="nav-img" loading="lazy" alt="Logo Avião">
+      <ul class="nav mt-5">
+        <li class="nav-item"><a class="nav-link" href="#inicio-avioes">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria-avioes">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato-avioes">Contato</a></li>
+      </ul>
+      <div id="acessibilidade-avioes" class="menu-acessibilidade">
+        <button id="botao-acessibilidade-avioes" class="btn btn-primary rotacao-botao fw-bold">Acessibilidade</button>
+        <div id="opcoes-acessibilidade-avioes" class="opcoes-acessibilidade apresenta-lista">
+          <button id="aumentar-fonte-avioes" class="btn btn-primary fw-bold">A +</button>
+          <button id="diminuir-fonte-avioes" class="btn btn-primary fw-bold">A -</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <section id="inicio-avioes" class="my-5">
+      <div class="inicio-fundo-avioes d-flex justify-content-between align-items-center">
+        <div class="esquerda-conteudo-avioes">
+          <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo ao conhecimento sobre avioes</h1>
+          <img src="img/aviao.png" class="mb-3" width="563" height="278" loading="lazy" alt="Imagem avião">
+          <a href="#historia-avioes" class="btn btn-primary btn-lg botao-inicio-avioes fw-semibold">Explorar!</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia-avioes" class="my-5 pt-6 secao-avioes">
+      <div class="container d-flex align-items-center">
+        <div class="col-4 d-flex justify-content-center">
+          <img src="img/pexels-phyllis-lilienthal-2153166936-33852780.jpg" class="rounded-pill" alt="Avião histórico" width="273" height="331" loading="lazy">
+        </div>
+        <div class="col-5">
+          <h2>Como surgiu a aviação?</h2>
+          <p class="p-2">A história da aviação começou com os irmãos Wright em 1903, quando realizaram o primeiro voo motorizado. Desde então, os aviões evoluíram de simples planadores para máquinas sofisticadas que cruzam continentes em poucas horas. A aviação revolucionou o transporte, conectando pessoas e culturas ao redor do mundo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria-avioes">
+      <h2 class="text-center pt-5">Galeria</h2>
+      <div class="container p-3 mt-3 fundo-galeria-avioes">
+        <div class="row justify-content-md-center">
+          <div class="col-md-4">
+            <img src="img/pexels-pixabay-163792.jpg" class="img-fluid rounded-5" loading="lazy" alt="Avião">
+          </div>
+          <div class="col-md-4">
+            <img src="img/pexels-phyllis-lilienthal-2153166936-33901274.jpg" class="img-fluid rounded-5" loading="lazy" alt="Avião">
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-md-center">
+          <div class="col-md-4">
+            <img src="img/pexels-solyartphotos-33859539.jpg" class="img-fluid rounded-5" loading="lazy" alt="Avião antigo">
+          </div>
+          <div class="col-md-4">
+            <img src="img/pexels-miguel-mendes-2658991-33868711.jpg" class="img-fluid rounded-5" loading="lazy" alt="Avião executivo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato-avioes">
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-10 rounded-5 formulario-avioes">
+          <h2 class="mb-3">Entre em contato</h2>
+          <form>
+            <div class="form-group mb-3">
+              <label for="nome-avioes">Nome</label>
+              <input type="text" id="nome-avioes" name="nome-avioes" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+            </div>
+            <div class="form-group mb-3">
+              <label for="email-avioes">Email</label>
+              <input type="email" id="email-avioes" name="email-avioes" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+            </div>
+            <div class="form-group mb-3">
+              <label for="mensagem-avioes">Mensagem</label>
+              <textarea id="mensagem-avioes" name="mensagem-avioes" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center p-3 fst-italic">
+    <p>Acesse nossas redes:</p>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-tiktok"></i>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+</body>
+</html>
